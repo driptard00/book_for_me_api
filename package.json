@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./app.js",
+    "start": "nodemon ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Akintade Oluwaseun",
@@ -19,6 +19,15 @@
     "mongoose": "^6.5.2",
     "morgan": "^1.10.0",
     "mysql2": "^2.3.3",
-    "nodemon": "^2.0.19"
+    "nodemailer": "^6.7.8",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^2.0.19",
+    "otp-generator": "^4.0.0",
+    "sequelize": "^6.21.6",
+    "sequelize-cli": "^6.4.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.18.9"
   }
 }

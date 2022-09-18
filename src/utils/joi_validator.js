@@ -1,6 +1,6 @@
 const Joi = require("joi");
-require("../models/user_model");
-require("../models/business_model");
+require("../mongoose_models/user_model");
+// require("../src/mongoose_models/business_model");
 require("../config/db_config");
 
 class JoiValidator{
@@ -14,8 +14,8 @@ class JoiValidator{
         .error( new Error("Password must have at least 8 characters and alphanumberic.")),
         profilepicture: Joi.string(),
         phonenumber: Joi.string().required(),
-        role: Joi.string().required()
-    })
+        role: Joi.string().required(),
+    }) 
 
     static userLoginUserSchema = Joi.object({
         email: Joi.string().required().email(),
@@ -25,6 +25,7 @@ class JoiValidator{
     static userUpdateSchema = Joi.object({
         fullname: Joi.string().min(2),
         profilepicture: Joi.string(),
+        email: Joi.string().email(),
         phonenumber: Joi.string(),
     })
 

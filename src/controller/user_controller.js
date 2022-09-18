@@ -1,4 +1,4 @@
-const Users = require("../models/user_model");
+const Users = require("../mongoose_models/user_model");
 const JoiValidator = require("../utils/joi_validator");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");

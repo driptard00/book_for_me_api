@@ -9,7 +9,7 @@ const userSchema = mongoose.Schema({
     profilepicture: {type: String, required: false},
     phonenumber: {type: String, required: true},
     role: {type: String, required: true},
-}, {timeStamps: true} );
+}, { timeStamps: true } );
 
 const userModel = mongoose.model("Users", userSchema);
 

@@ -7,8 +7,7 @@ const router = require("./routes");
 
 // DB connection
 const env = process.env.NODE_ENV || "development";
-require("./config/db_config")[env];
-
+require("../config/db_config.js")[env];
 
 
 //  parse JSON-encoded bodies and URL-encoded bodies
@@ -39,8 +38,8 @@ app.use("/api/v1", router);
 
 // Setting up listener
 const PORT = process.env.PORT || 4000;
-const HOST = process.env.HOST || "192.168.93.239";
-const BASE_URL = process.env.BASE_URL || "http://192.168.93.239:4000";
+const HOST = process.env.HOST || "192.168.150.239";
+const BASE_URL = process.env.BASE_URL || "http://192.168.150.239:4000";
 
 server.listen(
     PORT,
