@@ -3,7 +3,7 @@ const { app, server, express } = require("./server");
 require("dotenv").config();
 const cors = require("cors");
 const morgan = require("morgan");
-const router = require("./routes");
+const router = require("../routes");
 
 // DB connection
 const env = process.env.NODE_ENV || "development";
@@ -38,8 +38,8 @@ app.use("/api/v1", router);
 
 // Setting up listener
 const PORT = process.env.PORT || 4000;
-const HOST = process.env.HOST || "192.168.150.239";
-const BASE_URL = process.env.BASE_URL || "http://192.168.150.239:4000";
+const HOST = process.env.HOST || "192.168.83.239";
+const BASE_URL = process.env.BASE_URL || "http://192.168.83.239:4000";
 
 server.listen(
     PORT,
