@@ -38,8 +38,8 @@ app.use("/api/v1", router);
 
 // Setting up listener
 const PORT = process.env.PORT || 4000;
-const HOST = process.env.HOST || "192.168.83.239";
-const BASE_URL = process.env.BASE_URL || "http://192.168.83.239:4000";
+const HOST = process.env.HOST || "192.168.43.239";
+const BASE_URL = process.env.BASE_URL || "http://192.168.43.239:4000";
 
 server.listen(
     PORT,
